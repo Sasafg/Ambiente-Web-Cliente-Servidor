@@ -18,7 +18,7 @@ CREATE TABLE decoshop.articulos (
 
 CREATE TABLE decoshop.residencias (
     id int(11) not null auto_increment,
-    imagen image not null,
+    imagePath varchar(100) not null,
     descripcion varchar(150) not null,
     precio float not null,
     primary key (id)
@@ -38,7 +38,7 @@ CREATE TABLE decoshop.contacto (
     correo varchar(100) not null,
     telefono varchar(8) not null,
     asunto varchar(100) not null,
-    mensaje varchar(200) not null,
+    mensaje varchar(256) not null,
     primary key (id)
 );
 
