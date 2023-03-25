@@ -1,20 +1,23 @@
 
 //Funcion que procesa el registro confirmada la validacion
-function procesaRegistro(validacion){
+function procesaRegistro(){
+    validacion = getCookie('validacion').value;
+    var p1 = document.getElementById('password').value;
+    var p2 = document.getElementById('password2').value;
     if(validacion){
-
+        validaContrasena(p1, p2);
     } else {
         alert("Las contraseñas no coinciden");
     }
-    
-
 }
 
 //Funcion que valida que ambas contraseñas sean iguales
 function validaContrasena(p1, p2){
     if(p1 != p2){
+        setCookie('validacion', false, 1);
         return false;
     } else {
+        setCookie('validacion', true, 1);
         return true;
     }
 }

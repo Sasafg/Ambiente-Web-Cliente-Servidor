@@ -11,20 +11,13 @@ $contrasena2 = recogePost("password2");
 $correoOk = false;
 $contrasena2OK = false;
 
-$errorCorreo = "";
-$errorContrasena = "";
-
 
 if(preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,6}$/", $correo)){
     $correoOk = true;
-} else {
-    $errorCorreo = "Correo";
 }
 
 if($contrasena == $contrasena2){
     $contrasena2OK = true;
-} else {
-    $errorContrasena = "contrasena";
 }
 
 
@@ -39,9 +32,7 @@ $username = recogePost("username");
         echo "\n";
     }
 } else {
-    echo $errorCorreo;
-    echo "";
-    echo $errorContrasena;
+    header( 'Location: ../php/registro.php' ) ;
 }
 
 ?>

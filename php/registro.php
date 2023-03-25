@@ -13,7 +13,6 @@
     include_once '../include/navbar.php';
     ?>
 
-
     <form action="../server/recibeRegistro.php" method="POST">
         <!-- Nombre -->
         <div class="registro">
@@ -38,10 +37,10 @@
         <!-- Validación contraseña -->
         <div class="registro">
             <label for="password2">Reingrese la contraseña</label>
-            <input type="password" name="password2" id="password2" minlength="8" required oninput="setCookie('validacion',validaContrasena(document.getElementById('password').value, document.getElementById('password2').value),1)">
+            <input type="password" name="password2" id="password2" minlength="8" required>
         </div>
 
-        <button type="submit" onclick="procesaRegistro(getCookie('validacion'))">Enviar</button>
+        <button type="submit" onclick="procesaRegistro()">Enviar</button>
     </form>
 
     <script src="../cookie/Cookie.js"></script>
