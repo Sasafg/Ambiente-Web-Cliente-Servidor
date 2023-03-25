@@ -18,7 +18,7 @@
     
     <!-- Incluye el navbar ubicado en la carpeta Include -->
     <?php
-    include_once '../include/navbar.php';
+    include_once './include/navbar.php';
     ?>
     
     

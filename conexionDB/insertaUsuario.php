@@ -10,11 +10,12 @@ function ingresaUsuario($pNombre, $pUsername, $pCorreo, $pPassword)
     
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
-        $stmt = $conexion->prepare("Insert into usuarios (nombre, username, correo, password)
-                                        values(?,?,?)");
-        $stmt->bind_param("sss", $iNombre, $iUsername, $iCorreo, $iPassword);
+        $stmt = $conexion->prepare("Insert into usuarios (id, nombre, username, correo, contrasena)
+                                        values(?,?,?,?,?)");
+        $stmt->bind_param("issss", $iAuto, $iNombre, $iUsername, $iCorreo, $iPassword);
 
         //set parametros y ejecutar
+        $iAuto = '';
         $iNombre = $pNombre;
         $iUsername = $pUsername;
         $iCorreo = $pCorreo;

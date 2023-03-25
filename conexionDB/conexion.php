@@ -3,10 +3,10 @@
 function Conecta()
 {
     // 1. Establecer la conexión con el servidor de base de datos y seleccionar catalogo o base datos que vamos a utilizar
-    $server = "localhost";
+    $server = "127.0.0.1:3308";
     $user = "root";
     $password = "";
-    $dataBase = "universidad";
+    $dataBase = "decoshop";
 
     $conexion = mysqli_connect($server, $user, $password, $dataBase);
 

@@ -7,7 +7,7 @@
             <a href="#">Vehículos</a>
             <a href="#">Residencia</a>
             <a href="#">Contacto</a>
-            <a href="#">Registro</a>
+            <a href="./php/registro.php">Registro</a>
             <a href="#">Reseñas</a>
         </nav>
     </div>

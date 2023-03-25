@@ -18,27 +18,27 @@
         <!-- Nombre -->
         <div class="registro">
             <label for="nombre">Nombre completo</label>
-            <input type="text" name="nombre" id="nombre" required oninput="setCookie('nombre',value,1)">
+            <input type="text" name="nombre" id="nombre" pattern="[A-Za-z]+" required oninput="setCookie('nombre',value,1)">
         </div>
         <!-- Username -->
         <div class="registro">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username" required oninput="setCookie('username',value,1)">
+            <input type="text" name="username" id="username" required oninput="noespacios('username',value)">
         </div>
         <!-- Correo -->
         <div class="registro">
             <label for="correo">Correo</label>
-            <input type="text" name="correo" id="correo" required oninput="setCookie('correo',value,1)">
+            <input type="text" name="correo" id="correo" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,6}$" required oninput="setCookie('correo',value,1)">
         </div>
         <!-- Contraseña -->
         <div class="registro">
             <label for="password">Contraseña</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" minlength="8" required>
         </div>
         <!-- Validación contraseña -->
         <div class="registro">
             <label for="password2">Reingrese la contraseña</label>
-            <input type="password" name="password2" id="password2" required oninput="setCookie('validacion',validaContrasena(document.getElementById('password').value, document.getElementById('password2').value),1)">
+            <input type="password" name="password2" id="password2" minlength="8" required oninput="setCookie('validacion',validaContrasena(document.getElementById('password').value, document.getElementById('password2').value),1)">
         </div>
 
         <button type="submit" onclick="procesaRegistro(getCookie('validacion'))">Enviar</button>

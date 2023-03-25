@@ -18,3 +18,16 @@ function validaContrasena(p1, p2){
         return true;
     }
 }
+
+function noespacios(username,value) {
+    var er = new RegExp(/\s/);
+    var web = document.getElementById('username').value;
+    if(er.test(web)){
+        alert('No se permiten espacios');
+        return false;
+    }else {
+        setCookie(username,value,1);
+        return true;
+    }
+        
+}
