@@ -40,7 +40,7 @@
             <input type="password" name="password2" id="password2" minlength="8" required>
         </div>
 
-        <button type="submit" onclick="procesaRegistro()">Enviar</button>
+        <button type="submit" onclick="procesaRegistro()">Registrarse</button>
     </form>
 
     <script src="../cookie/Cookie.js"></script>
