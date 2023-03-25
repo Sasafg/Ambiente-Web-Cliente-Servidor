@@ -3,7 +3,7 @@
 function Conecta()
 {
     // 1. Establecer la conexión con el servidor de base de datos y seleccionar catalogo o base datos que vamos a utilizar
-    $server = "127.0.0.1:3308";
+    $server = "localhost";
     $user = "root";
     $password = "";
     $dataBase = "decoshop";
