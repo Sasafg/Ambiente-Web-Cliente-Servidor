@@ -25,3 +25,68 @@ padding: 5px;
     align-items: center;
   }
 
+  .bg-color {
+    background-color: #6279b8;
+    height: 40px;
+}
+
+
+.logo {
+    position: absolute;
+    top: -22px;
+    z-index: 1;
+}
+
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.navbar-expand-lg {
+    box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
+}
+
+
+
+.home {
+    margin-left: 90px;
+}
+
+
+.gow{
+    
+    margin: 40px;
+}
+
+
+.start {
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.navv{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    padding: 20px 0;
+    justify-items: center;
+    width: 100%
+
+
+
+}
+.navbar-toggler-icon{
+   
+}
+
+
+
+.logoo{
+
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 400;
+}
