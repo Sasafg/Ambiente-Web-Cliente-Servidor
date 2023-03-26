@@ -1,14 +1,21 @@
 body{
-    background-color: rgb(255, 255, 255);
+  
     font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 
-.nav-bg {
-  background-color: rgb(80, 160, 230);
-  margin-top: 1%;
-  width: 100%;
+
+
+.container{
+  background-color: #e2e6ec;
+  align-items: center;
+}
+
+
+a{
+padding: 5px;
+
 }
 
 
