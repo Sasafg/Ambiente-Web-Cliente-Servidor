@@ -8,7 +8,7 @@ function procesaRegistro(){
     if(validacion){
         validaContrasena(p1, p2);
     } else {
-        alert("Las contraseñas no coincidennnnn");
+        alert("Invalid passwords");
     }
 }
 
