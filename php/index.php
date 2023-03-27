@@ -10,16 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;500&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Nosotros</title>
 </head>
 
 
     <!-- Incluye el navbar ubicado en la carpeta Include -->
-
-    <?php
-    include_once './include/navbar.php';
+<?php
+    include_once '../include/navbar.php';
     ?>
+    
 
 <body>
     
