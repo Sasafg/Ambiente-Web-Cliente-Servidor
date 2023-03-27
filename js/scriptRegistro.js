@@ -4,10 +4,11 @@ function procesaRegistro(){
     validacion = getCookie('validacion').value;
     var p1 = document.getElementById('password').value;
     var p2 = document.getElementById('password2').value;
+
     if(validacion){
         validaContrasena(p1, p2);
     } else {
-        alert("Las contraseñas no coinciden");
+        alert("Las contraseñas no coincidennnnn");
     }
 }
 

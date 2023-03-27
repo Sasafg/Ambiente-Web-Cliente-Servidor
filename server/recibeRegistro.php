@@ -31,8 +31,11 @@ $username = recogePost("username");
         echo "<p>No se pudo ingresar</p>";
         echo "\n";
     }
-} else {
-    header( 'Location: ../php/registro.php' ) ;
 }
+
+sleep(5);
+header( 'Location: ../php/registro.php' );
+
+
 
 ?>
