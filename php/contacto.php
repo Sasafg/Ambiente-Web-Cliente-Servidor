@@ -4,9 +4,12 @@
 <head>
   <title></title>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/Contacto.css" />
+  <link rel="preload" href="./css/contacto.css" as="style">
 
 </head>
 
@@ -19,15 +22,16 @@
           <img src="../imagenes/LOGO.png" alt="" width="100" height="100">
         </a>
 
-        <li><a href="/html/acercadenosotros.html">Nosotros</a></li>
-        <li><a href="/html/articulos.html">Artículos</a></li>
-        <li><a href="/html/vehiculos.html">Vehículos</a></li>
-        <li><a href="/html/recidencia.html">Residencia</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="/php/registro.php">Registro</a></li>
+        <li><a href="index.php">Nosotros</a></li>
+        <li> <a href="articulos.php">Artículos</a></li>
+        <li><a href="vehiculos.php">Vehículos</a></li>
+        <li><a href="residencia.php">Residencia</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
+        <li><a href="registro.php">Registro</a></li>
         <li><a href="#">Reseñas</a></li>
       </ul>
     </nav>
+
     <div class="vacio1"></div>
     <form>
       <h2> Contáctanos </h2>
