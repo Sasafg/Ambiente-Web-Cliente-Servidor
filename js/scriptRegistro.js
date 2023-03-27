@@ -35,3 +35,15 @@ function noespacios(username,value) {
     }
         
 }
+
+//Funcion que procesa la entrada de reseñas
+function procesaResena(){
+    var pCalificacion = document.getElementById('calificacion').value;
+    var pComentario = document.getElementById('comentario').value;
+
+    if(pCalificacion >= 1 & pCalificacion<=5){
+        validaContrasena(pCalificacion, pComentario);
+    } else {
+        alert("La calificacion debe ser entre 1 y 5.");
+    }
+}

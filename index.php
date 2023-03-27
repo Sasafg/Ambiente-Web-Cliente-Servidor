@@ -28,7 +28,7 @@
             <li><a href="./php/residencia.php">Residencia</a></li>
             <li><a href="#">Contacto</a></li>
             <li><a href="./php/registro.php">Registro</a></li>
-            <li><a href="#">Reseñas</a></li>
+            <li><a href="./php/resenas.php">Reseñas</a></li>
         </ul>
     </div>
     
@@ -39,5 +39,3 @@
     
 </body>
 </html>
-
-
