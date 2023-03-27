@@ -202,7 +202,6 @@ footer {
         grid-template-rows: 0.4fr 0.1fr 2.2fr 0.4fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
         grid-template-areas:
             "nav"
-            "nav_catalogo"
             "main"
             "equipo"
             "miembro1"

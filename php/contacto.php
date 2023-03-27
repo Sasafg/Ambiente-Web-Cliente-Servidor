@@ -28,20 +28,19 @@
         <li><a href="residencia.php">Residencia</a></li>
         <li><a href="contacto.php">Contacto</a></li>
         <li><a href="registro.php">Registro</a></li>
-        <li><a href="#">Reseñas</a></li>
+        <li><a href="#resenas.php">Reseñas</a></li>
       </ul>
     </nav>
 
     <div class="vacio1"></div>
-    <form>
+    <form action="../server/recibeContacto.php" method="POST">
       <h2> Contáctanos </h2>
-      <input type="text" id="name" placeholder="Nombre" required>
-      <input type="email" id="email" placeholder="Correo electrónico" required>
-      <input type="phone" id="phone" placeholder="Número de teléfono" required>
-      <input type="text" id="tipo_pedido" placeholder="Tipo" required>
-      <input type="text" id="message" placeholder="Asunto" required>
-
-      <textarea id="message" rows="4" placeholder="Mensaje"></textarea>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+      <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+      <input type="phone" name="telefono" id="telefono" placeholder="Número de teléfono" required>
+      <input type="text" name="tipo_pedido" id="tipo_pedido" placeholder="Tipo" required>
+      <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
+      <textarea name="mensaje" id="mensaje" rows="4" placeholder="Mensaje"></textarea>
       <button type="submit">Enviar</button>
     </form>
     <div class="vacio2"></div>
