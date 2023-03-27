@@ -33,9 +33,6 @@ $username = recogePost("username");
     }
 }
 
-sleep(5);
-header( 'Location: ../php/registro.php' );
-
-
+echo "<a href='../php/registro.php'>Volver</a>";
 
 ?>
