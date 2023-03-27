@@ -14,7 +14,7 @@
 </head>
 
 <?php
-    include_once '../include/navbar.php';
+    include_once './include/navbar.php';
     ?>
 
 <body>

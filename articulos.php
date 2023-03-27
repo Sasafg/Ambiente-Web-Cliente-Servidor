@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <?php
-    include_once '../include/navbar.php';
+    include_once './include/navbar.php';
     ?>
 
 <body>

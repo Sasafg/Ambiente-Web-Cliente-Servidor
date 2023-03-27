@@ -6,7 +6,7 @@
 
     <ul>
         <a class="navbar-brand" href="#">
-        <img src="/imagenes/LOGO.png" alt="" width="100" height="100">
+        <img src="./imagenes/LOGO.png" alt="" width="100" height="100">
         </a>
 
         <li><a href="articuloss">Nosotros</a></li>

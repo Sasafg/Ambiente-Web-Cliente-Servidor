@@ -11,10 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;500&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 
 <?php
-    include_once '../include/navbar.php';
+    include_once './include/navbar.php';
     ?>
 <body>
 
