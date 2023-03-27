@@ -52,7 +52,7 @@
         <div class="miembro1">
             <h2>Saray Fajardo</h2>
             <p class="title">Gerente General</p>
-            <p>jordan@example.com</p>
+            <p>saray@example.com</p>
             <p><button class="button">Contactar</button></p>
         </div>
         <div id="miembro2">
