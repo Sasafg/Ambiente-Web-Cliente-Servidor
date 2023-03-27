@@ -1,41 +1,28 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Atículos</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/aticulos.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
+<?php
+    include_once './include/navbar.php';
+    ?>
 
 <body>
 
 
 
-    <body>
     
 
-        <div class="NAV">
-
-            <ul>
-                <a class="navbar-brand" href="#">
-                    <img src="/imagenes/LOGO.png" alt="" width="100" height="100">
-                </a>
-        
-                <li><a href="index.html">Nosotros</a></li>
-                <li> <a href="articulos.html">Artículos</a></li>
-                <li><a href="vehiculos.html">Vehículos</a></li>
-                <li><a href="recidencia.html">Residencia</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="registro.php">Registro</a></li>
-                <li><a href="#">Reseñas</a></li>
-            </ul>
-        
-        </div>
-        
+  
         
         <h1> Artículos Destacados</h1>
         <div class="row">
