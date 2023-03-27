@@ -1,13 +1,21 @@
-<h2>Decoshop</h2>
-    <!-- Navigation bar -->
-    <div class="nav-bg">
-        <nav class="navegacion-principal-contenedor">
-            <a href="#">Acerca de</a>
-            <a href="#">Artículos</a>
-            <a href="#">Vehículos</a>
-            <a href="#">Residencia</a>
-            <a href="#">Contacto</a>
-            <a href="./php/registro.php">Registro</a>
-            <a href="#">Reseñas</a>
-        </nav>
-    </div>
+
+
+
+
+<div class="NAV">
+
+    <ul>
+        <a class="navbar-brand" href="#">
+        <img src="/imagenes/LOGO.png" alt="" width="100" height="100">
+        </a>
+
+        <li><a href="articuloss">Nosotros</a></li>
+        <li> <a href="articulos.php">Artículos</a></li>
+        <li><a href="vehiculos.php">Vehículos</a></li>
+        <li><a href="recidencia.php">Residencia</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="registro.php">Registro</a></li>
+        <li><a href="#">Reseñas</a></li>
+    </ul>
+
+</div>

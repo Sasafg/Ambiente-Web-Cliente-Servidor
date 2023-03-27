@@ -1,49 +1,29 @@
-<!DOCTYPE html>
-<html>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Recidencial</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/aticulos.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-
-
+<?php
+    include_once '../include/navbar.php';
+    ?>
 
 <body>
-    <div class="NAV">
-
-        <ul>
-            <a class="navbar-brand" href="#">
-                <img src="/imagenes/LOGO.png" alt="" width="100" height="100">
-            </a>
-    
-            <li><a href="index.html">Nosotros</a></li>
-            <li> <a href="articulos.html">Artículos</a></li>
-            <li><a href="vehiculos.html">Vehículos</a></li>
-            <li><a href="recidencia.html">Residencia</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="registro.php">Registro</a></li>
-            <li><a href="#">Reseñas</a></li>
-        </ul>
-    
-    </div>
-    
-    
-
-
-
-
-
     <h1></h1>
     <div class="row">
         <div class="column">
             <div class="card">
-                <h3>Pola</h3>
-                <img src="https://scontent.fsyq7-1.fna.fbcdn.net/v/t39.30808-6/260287322_235702638631761_2402257491780559833_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=W8O9QtNKfBIAX9eRpQ-&_nc_oc=AQnoTdDTa8q_nKVDw-Mkzs5eIy0l0b880cns4_DZ9_etV3vbGdUxxV23qNIXWsXXwCo&_nc_ht=scontent.fsyq7-1.fna&oh=00_AfB8Emk3W0Bo8ejWE2Z7k1H5u-RyJVNQFum0zcyIExEhfw&oe=642466F4"
+                <h3>Polarizado Industrial</h3>
+                <img src="/imagenes/el-coco.jpg"
                     alt="deco" width="220" height="220">
                 <div class="container">
                     <h4>Precio:₡88.000 </h4>
@@ -104,43 +84,7 @@
     </div>
     </div>
 
-
-    <footer class="footer">
-        <div class="containerf">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Nuestra Compañía</h4>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>¿Necesitas Ayuda?</h4>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#">p</a></li>
-                    </ul>
-                </div>
-               
-                </div>
-                <div class="footer-col">
-                    <h4>Siguenos</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
+    
 </body>
 
 </html>

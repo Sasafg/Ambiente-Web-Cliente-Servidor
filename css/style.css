@@ -1,21 +1,9 @@
-body{
-  
+
+
+body {
     font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
-}
-
-
-
-.container{
-  background-color: #e2e6ec;
-  align-items: center;
-}
-
-
-a{
-padding: 5px;
-
 }
 
 
@@ -23,70 +11,138 @@ padding: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
-
-  .bg-color {
-    background-color: #6279b8;
-    height: 40px;
 }
 
-
-.logo {
-    position: absolute;
-    top: -22px;
-    z-index: 1;
+.NAV{
+	background: #666e9e;
+    color:white;
 }
 
-
-.logo img {
-    width: 80px;
-    height: 80px;
-}
-
-
-.navbar-expand-lg {
-    box-shadow: 0 2px 2px rgb(0 0 0 / 15%);
-}
-
-
-
-.home {
-    margin-left: 90px;
-}
-
-
-.gow{
+.NAV img{
+position: relative;
+align-content:initial;
+top: auto;
     
-    margin: 40px;
-}
-
-
-.start {
-    margin: 0px;
-    padding: 10px;
-    padding-bottom: 30px;
-}
-
-.navv{
-    display: flex;
-    align-items:  center;
-    justify-content: center;
-    padding: 20px 0;
-    justify-items: center;
-    width: 100%
-
-
 
 }
-.navbar-toggler-icon{
+
+a{
+position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    left: -90px;
+
+}
+
+ul{
+	display: flex;
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+    color: white;
+}
+
+li {
+	padding: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+	margin: auto;
+    font-size: 20px;
+   text-align: center;
+   text-decoration: none;
+
+}
+
+li:hover {
+  background-size: 100% 100%;
+  color:rgb(255, 255, 255);
+  animation: spring 300ms ease-out;
+font-weight: bold;
+}
+
+li:active {
+  transform: translateY(2px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.90, 0.90);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.90, 0.90);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+/***************************** HASTA AQUÍ CSS DE NAV ******************************/
+ 
+h1{
+    font-size: 65px;
+   font-family: Roboto ;
+   position: relative;
+   text-align: center;
+   padding: 20px;
+   }
    
-}
+   
+   .column {
+       float: left;
+       display: block;
+       margin-bottom: 20px;
+       justify-content: center;
+       
+       
+     }
+   
+   
+     .row {
+       display: table;
+       clear: both;
+     }
+   
+   
+   
+   .card {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       transition: 0.3s;
+       margin: 30px;
+       padding: 30px;
+       width: 250px;
+       height: 400px;
+       text-align: center;
+       position: relative;
+   
+   }
+   
+   
+   
+   * {
+       margin: 0;
+       padding: 0;
+       list-style-type: none;
+   }
+
+   .container{
+position: relative;
+align-items: center;
+margin: 10px;
+
+   }
+
+/******************FINALIZA CSS PARA EL BODY****************/
 
 
-
-.logoo{
-
-    font-size: 1.1rem;
-    color: black;
-    font-weight: 400;
-}
