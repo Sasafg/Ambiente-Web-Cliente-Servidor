@@ -14,14 +14,23 @@
     <title>Nosotros</title>
 </head>
 
-
-    <!-- Incluye el navbar ubicado en la carpeta Include -->
-<?php
-    include_once '../include/navbar.php';
-    ?>
-    
-
 <body>
+
+<div class="NAV">
+        <ul>
+            <a class="navbar-brand" href="#">
+                <img src="./imagenes/LOGO.png" alt="" width="100" height="100">
+            </a>
+            
+            <li><a href="index.php">Nosotros</a></li>
+            <li> <a href="./php/articulos.php">Artículos</a></li>
+            <li><a href="./php/vehiculos.php">Vehículos</a></li>
+            <li><a href="./php/residencia.php">Residencia</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="./php/registro.php">Registro</a></li>
+            <li><a href="#">Reseñas</a></li>
+        </ul>
+    </div>
     
     
     

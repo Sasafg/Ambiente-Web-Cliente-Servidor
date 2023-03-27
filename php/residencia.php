@@ -17,7 +17,7 @@
     ?>
 
 <body>
-    <h1>Polarizado Recidencial</h1>
+    <h1>Polarizado Residencial</h1>
     <div class="row">
         <div class="column">
             <div class="card">
