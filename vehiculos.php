@@ -26,7 +26,7 @@
             <div class="column">
                 <div class="card">
                     <h3>Parabrisas Trasero</h3>
-                    <img src="/imagenes/polarizados.jpg"
+                    <img src="./imagenes/polarizados.jpg"
                         alt="deco" width="220" height="220">
                     <div class="container">
                         <h4>Precio:₡18.000 </h4>
