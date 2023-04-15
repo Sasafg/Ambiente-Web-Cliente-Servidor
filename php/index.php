@@ -11,27 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="preload" href="./css/index.css" as="style">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
+<?php
+    include_once '../include/navbar.php';
+    ?>
 
     <div class="container">
-        <nav>
-            <ul>
-                <a class="navbar-brand" href="#">
-                    <img src="../imagenes/LOGO.png" alt="" width="100" height="100">
-                </a>
-
-                <li><a href="index.php">Nosotros</a></li>
-                <li> <a href="articulos.php">Artículos</a></li>
-                <li><a href="vehiculos.php">Vehículos</a></li>
-                <li><a href="residencia.php">Residencia</a></li>
-                <li><a href="contacto.php">Contacto</a></li>
-                <li><a href="registro.php">Registro</a></li>
-                <li><a href="resenas.php">Reseñas</a></li>
-            </ul>
-        </nav>
 
         <main>
             <h2 id="titulo_ad">Acerca de nosostros</h2>
