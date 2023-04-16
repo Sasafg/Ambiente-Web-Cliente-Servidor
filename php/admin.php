@@ -27,17 +27,16 @@
                 <a href="../subirArchivo/modificarProducto.php" style="margin-left:17%; color: black">Productos
                 </a> 
             </div>
-            <div>
-                <a href="#Usuarios#" style="margin-left:17%; color: black">Usuarios
-                </a> 
-            </div>
+
             <div>
             <a href="#Solicitudes#" style="margin-left:17%; color: black">Solicitudes
                 </a> 
             </div>
+
             <a href="#Informacion#" style="margin-left:17%; color: black">Informacion
                 </a> 
             <div>
+                
             <a href="#Resenas#" style="margin-left:17%; color: black">Reseñas
                 </a> 
             </div>
