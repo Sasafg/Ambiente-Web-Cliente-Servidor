@@ -21,19 +21,25 @@
 
     <div class="resenas">
 
-        <form method="POST">
+        <form>
             <h2> Administrar </h2>
             <div>
-                <a href="#Usuarios#" style="color: black;">Usuarios</a>
+                <a href="../subirArchivo/modificarProducto.php" style="margin-left:17%; color: black">Productos
+                </a> 
             </div>
             <div>
-                <a href="#Contacto#" style="color: black;">Solicitudes</a>
+                <a href="#Usuarios#" style="margin-left:17%; color: black">Usuarios
+                </a> 
             </div>
             <div>
-                <a href="#InfoGeneral#" style="color: black;">Informacion</a>
+            <a href="#Solicitudes#" style="margin-left:17%; color: black">Solicitudes
+                </a> 
             </div>
+            <a href="#Informacion#" style="margin-left:17%; color: black">Informacion
+                </a> 
             <div>
-                <a href="#Resenas#" style="color: black;">Reseñas</a>
+            <a href="#Resenas#" style="margin-left:17%; color: black">Reseñas
+                </a> 
             </div>
             </div>
 

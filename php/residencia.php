@@ -21,7 +21,7 @@
     <?php
         require_once '../include/obtieneRequets.php';
         require_once '../conexionDB/insertaArticulo.php';
-        $nombreTabla = "vehiculos";
+        $nombreTabla = "residencias";
         $arr = devArreglo($nombreTabla);
         ?>
         <div class="row">

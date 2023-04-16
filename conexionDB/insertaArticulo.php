@@ -87,6 +87,43 @@ function consultaArticulo($pID, $varRef, $nombreTabla)
 
 }
 
+//Consulta cierta informacion de registro del usuario a base de datos
+function consultaTodosArticulo($varRef, $nombreTabla)
+{
+    $retorno = false;
+    $conexion = Conecta();
+    $sql = "select id, nombre, imagePath, descripcion, precio from ".$nombreTabla;
+    
+    // formato de datos utf8
+    if (mysqli_set_charset($conexion, "utf8")){
+        $resultado = mysqli_prepare($conexion, $sql);
+        //$ok=mysqli_stmt_bind_param($resultado);
+        $ok=mysqli_stmt_execute($resultado);
+        
+        if($ok){
+            $ok=mysqli_stmt_bind_result($resultado, $id, $nombre, $imagePath, $descripcion, $precio);
+            while(mysqli_stmt_fetch($resultado)){
+                if($varRef == "nombre"){
+                    echo $nombre . " <br> ";
+                } else if ($varRef == "descripcion"){
+                    echo $descripcion . " <br> ";
+                } else if($varRef == "precio"){
+                    echo $precio . " <br> ";
+                } else if ($varRef == "imagePath"){
+                    echo $imagePath;
+                } else {
+                    echo "ID: " .$id . " <br> Nombre: " . $nombre . " <br> Descripcion: " . $descripcion . " <br> Precio: " . $precio . "<br><br>";
+                }
+            }
+        } else {
+            echo "Error consulta";
+        }
+    }
+
+    Desconecta($conexion);
+
+}
+
 
 //Cambio de contrasena por medio de UPDATE (solo para admin)
 function actualizaArticulo($pID, $nombreTabla)
