@@ -38,43 +38,65 @@ function eliminaUsuario($pID)
 {
     $retorno = false;
     $conexion = Conecta();
-    
+    $sql = "delete from usuarios where id = ?";
+
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
-        $stmt = $conexion->prepare("delete from usuarios
-                                    where username = {$_POST['username']}");
-        
-
-        if($stmt->execute()){
-            $retorno = true;
-        }
+        $elimina = mysqli_prepare($conexion, $sql);
+        $ok=mysqli_stmt_bind_param($elimina, "s", $pID);
+        $ok=mysqli_stmt_execute($elimina);
     }
 
     Desconecta($conexion);
-
-    return $retorno;
 }
 
 
 //Consulta cierta informacion de registro del usuario a base de datos
-function consultaUsuario()
+function consultaUsuario($pID)
 {
     $retorno = false;
     $conexion = Conecta();
+    $sql = "select nombre, username, correo from usuarios where id = ?";
     
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
-        $stmt = $conexion->prepare("select id, nombre, username, correo from usuarios");
+        $resultado = mysqli_prepare($conexion, $sql);
+        $ok=mysqli_stmt_bind_param($resultado, "s", $pID);
+        $ok=mysqli_stmt_execute($resultado);
         
-        if($stmt->execute()){
-            $retorno = true;
+        if($ok){
+            $ok=mysqli_stmt_bind_result($resultado, $nombre, $username, $correo);
+            while(mysqli_stmt_fetch($resultado)){
+                echo $nombre . " <br> " . $username . " <br> " . $correo . "<br>";
+            }
+        } else {
+            echo "Error consulta";
         }
     }
 
     Desconecta($conexion);
 
-    return $retorno;
 }
+
+
+//Cambio de contrasena por medio de UPDATE (solo para admin)
+function actualizaUsuario($idUsuario, $contrasena)
+{
+    $retorno = false;
+    $conexion = Conecta();
+    $sql = "update usuarios set contrasena = ? where id = ?";
+    
+    // formato de datos utf8
+    if (mysqli_set_charset($conexion, "utf8")){
+        $actualizacion = mysqli_prepare($conexion, $sql);
+        $ok=mysqli_stmt_bind_param($actualizacion, "si", $contrasena, $idUsuario);
+        $ok=mysqli_stmt_execute($actualizacion);
+    }
+
+    Desconecta($conexion);
+
+}
+
 
 
 ?>

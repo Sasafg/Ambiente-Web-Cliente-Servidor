@@ -57,6 +57,10 @@
         </div>
 
         <button type="submit" onclick="procesaRegistro()">Registrarse</button>
+        <?php
+        echo "<br>";
+        require_once '../include/alertas.php';
+        ?>
     </form>
     </div>
 

@@ -39,6 +39,6 @@ $username = recogePost("username");
     }
 }
 
-echo "<a href='../php/registro.php'>Volver</a>";
+header('Location: ../php/registro.php?alerta=2');
 
 ?>
