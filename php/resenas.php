@@ -25,16 +25,16 @@
             <h2> Deja una Reseña </h2>
             <!--  -->
             <span id="calificacion">
-                        <label for="lcal1">1</label>
-                        <input id="calificacion" type="radio" name="calificacion" value="1" />
-                        <label for="lcal2">2</label>
-                        <input id="calificacion" type="radio" name="calificacion" value="2" />
-                        <label for="lcal3">3</label>
-                        <input id="calificacion" type="radio" name="calificacion" value="3" />
-                        <label for="lcal4">4</label>
-                        <input id="calificacion" type="radio" name="calificacion" value="4" />
-                        <label for="lcal4">5</label>
-                        <input id="calificacion" type="radio" name="calificacion" value="5" checked="checked" /></span><br />
+                <label for="lcal1">1</label>
+                <input id="calificacion" type="radio" name="calificacion" value="1" />
+                <label for="lcal2">2</label>
+                <input id="calificacion" type="radio" name="calificacion" value="2" />
+                <label for="lcal3">3</label>
+                <input id="calificacion" type="radio" name="calificacion" value="3" />
+                <label for="lcal4">4</label>
+                <input id="calificacion" type="radio" name="calificacion" value="4" />
+                <label for="lcal4">5</label>
+                <input id="calificacion" type="radio" name="calificacion" value="5" checked="checked" /></span><br />
             <!--  
             <div class="caja">
                 <input type="number" name="calificacion" id="calificacion" pattern="[0-5]" required placeholder="Calificacion">
@@ -49,8 +49,9 @@
         </form>
     </div>
 
+    <div class="resenas">
 
-
+    </div>
 </body>
 
 </html>
