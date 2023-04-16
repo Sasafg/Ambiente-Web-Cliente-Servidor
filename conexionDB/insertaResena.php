@@ -11,7 +11,7 @@ function ingresaResena($pPuntaje, $pComentario)
     if (mysqli_set_charset($conexion, "utf8")){
         $stmt = $conexion->prepare("Insert into resenas (id, puntaje, comentario)
                                         values(?,?,?)");
-        $stmt->bind_param("issss", $iAuto, $iPuntaje, $iComentario);
+        $stmt->bind_param("iss", $iAuto, $iPuntaje, $iComentario);
 
         //set parametros y ejecutar
         $iAuto = '';

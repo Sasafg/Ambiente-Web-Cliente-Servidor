@@ -21,11 +21,11 @@
 
     <div class="resenas">
 
-        <form method="POST">
+        <form method="POST" action="../server/recibeResena.php">
             <h2> Deja una Reseña </h2>
             <!-- Comentario -->
             <div class="caja">
-                <input type="number" name="calificacion" id="calificacion" required placeholder="Calificacion">
+                <input type="number" name="                             calificacion" id="calificacion" required placeholder="Calificacion">
             </div>
             <div class="caja">
                 <input type="text" name="comentario" id="comentario" required placeholder="Comentario">
