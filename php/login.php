@@ -21,7 +21,7 @@
 
     <div class="resenas">
 
-        <form method="POST">
+        <form action="../server/recibeLogin.php"method="POST">
             <h2> Ingreso </h2>
             <!-- Comentario -->
             <div class="caja">
