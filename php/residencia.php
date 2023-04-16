@@ -18,6 +18,52 @@
 
 <body>
     <h1>Polarizado Residencial</h1>
+    <?php
+        require_once '../include/obtieneRequets.php';
+        require_once '../conexionDB/insertaArticulo.php';
+        $nombreTabla = "vehiculos";
+        $arr = devArreglo($nombreTabla);
+        ?>
+        <div class="row">
+            <?php
+            foreach($arr as $row){ 
+                $pID = $row["id"];
+                ?>
+                <div class="column">
+                <?php
+                ?>
+                <div class="card">
+                    <h3>
+                        <?php
+                        $varRef = "nombre";
+                        consultaArticulo($pID, $varRef, $nombreTabla);
+                        ?>
+                    </h3>
+                    <?php $varRef = "imagePath"?>
+                    <img src="<?php consultaArticulo($pID, $varRef, $nombreTabla);?>"
+                        alt="deco" width="220" height="220">
+                        <h4>
+                        <?php
+                        $varRef = "descripcion";
+                        consultaArticulo($pID, $varRef, $nombreTabla);
+                        ?>
+                        </h4>
+                    <div class="container">
+                        <h4>Precio:₡ 
+                        <?php
+                        $varRef = "precio";
+                        consultaArticulo($pID, $varRef, $nombreTabla);
+                        ?>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <?php
+            }
+            ?>
+
+
+<!-- SECCION A REMOVER UNA VEZ SE INGRESE LA INFO A LA BASE DE DATOS
     <div class="row">
         <div class="column">
             <div class="card">
@@ -67,6 +113,7 @@
                 <button type="submit" class="boton">Agregar</button>
             </div>
         </div>
+-->
 
         
     </div>

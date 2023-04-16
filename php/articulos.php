@@ -64,7 +64,7 @@
             }
             ?>
 
-<!-- SECCION A REMOVER
+<!-- SECCION A REMOVER UNA VEZ SE INGRESE LA INFO A LA BASE DE DATOS
             <div class="column">
                 <div class="card">
                         <h3>Alfombras de Banjeja</h3>
