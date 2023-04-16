@@ -18,6 +18,9 @@
 <body>
 <?php
     include_once '../include/navbar.php';
+    require_once '../include/obtieneRequets.php';
+    require_once '../conexionDB/insertaNosotros.php';
+    $pID = 1;
     ?>
 
     <div class="container">
@@ -25,12 +28,24 @@
         <main>
             <h2 id="titulo_ad">Acerca de nosostros</h2>
             <p class="acerca_de">
-                En nuestro emprendimiento de instalación de accesorios para vehículos, estamos comprometidos con brindar soluciones personalizadas y de alta calidad para nuestros clientes. Sabemos que su vehículo es una inversión importante y queremos ayudarlo a maximizar su potencial. Es por eso que nuestro equipo de profesionales altamente capacitados tiene años de experiencia en la instalación de todo tipo de accesorios, desde sistemas de sonido avanzados hasta kits de iluminación personalizados.
-                En nuestro negocio, nos enorgullece ofrecer una amplia gama de servicios de instalación de accesorios para vehículos para satisfacer las necesidades individuales de nuestros clientes. Nuestro objetivo es hacer que la experiencia de manejo de nuestros clientes sea más cómoda, segura y emocionante al ofrecer soluciones personalizadas que reflejen su estilo y personalidad.
-                Además, sabemos que la satisfacción del cliente es la clave del éxito de cualquier negocio. Es por eso que nos esforzamos por ofrecer un servicio al cliente excepcional en todo momento. Nuestro equipo amigable y profesional se asegura de que cada cliente reciba atención personalizada y soluciones que satisfagan sus necesidades específicas.
-                Como un pequeño emprendimiento con muchos deseos de superación, estamos dedicados a brindar un servicio de alta calidad y confiable. Nos enorgullecemos de trabajar con las mejores marcas y productos en el mercado para garantizar la satisfacción de nuestros clientes. Además, ofrecemos precios competitivos para garantizar que nuestros clientes obtengan el mejor valor por su inversión.
-                En resumen, si está buscando un lugar confiable y amigable para personalizar su vehículo y mejorar su experiencia de manejo, no busque más allá de nosotros. Estamos comprometidos con la satisfacción del cliente y nos esforzamos por brindar soluciones personalizadas y de alta calidad que reflejen su estilo y personalidad. Permítanos ayudarlo a llevar su vehículo al siguiente nivel.
-
+                <?php
+                $varRef = "acerca";
+                consultaInfo($pID, $varRef);
+                ?>
+            </p>
+            <h2 id="vision">Vision</h2>
+            <p class="acerca_de">
+                <?php
+                $varRef = "vision";
+                consultaInfo($pID, $varRef);
+                ?>
+            </p>
+            <h2 id="mision">Mision</h2>
+            <p class="acerca_de">
+                <?php
+                $varRef = "mision";
+                consultaInfo($pID, $varRef);
+                ?>
             </p>
         </main>
 

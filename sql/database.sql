@@ -66,3 +66,38 @@ CREATE TABLE decoshop.resenas (
     REFERENCES decoshop.usuarios (id),
     primary key (id)
 );
+
+
+--Ejemplo de insert en Articulos--
+
+INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+
+--Ejemplo de insert en Vehiculos--
+
+INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.articuvehiculoslos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+
+--Ejemplo de insert en Residencias--
+
+INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+
+
+-- Insert para Nosotros
+INSERT INTO decoshop.infogeneral VALUES (1, "En nuestro emprendimiento de instalación de accesorios para vehículos, 
+estamos comprometidos con brindar soluciones personalizadas y de alta calidad para nuestros clientes. Sabemos que su vehículo 
+es una inversión importante y queremos ayudarlo a maximizar su potencial. Es por eso que nuestro equipo de profesionales 
+altamente capacitados tiene años de experiencia en la instalación de todo tipo de accesorios, desde sistemas de sonido 
+avanzados hasta kits de iluminación personalizados", "Llevar a cabo nuestra labor con el mayor esmero, ganando la confianza 
+de nuestros preciados clientes", "Establecernos como empresa en el mercado costarricense brindando un servicio de la mas 
+alta calidad");
