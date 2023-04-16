@@ -24,17 +24,17 @@
         <form method="POST" action="../server/recibeResena.php">
             <h2> Deja una Reseña </h2>
             <!--  -->
-            <span id="calificacion">
+            <span id="puntaje">
                 <label for="lcal1">1</label>
-                <input id="calificacion" type="radio" name="calificacion" value="1" />
+                <input id="puntaje" type="radio" name="puntaje" value="1" />
                 <label for="lcal2">2</label>
-                <input id="calificacion" type="radio" name="calificacion" value="2" />
+                <input id="puntaje" type="radio" name="puntaje" value="2" />
                 <label for="lcal3">3</label>
-                <input id="calificacion" type="radio" name="calificacion" value="3" />
+                <input id="puntaje" type="radio" name="puntaje" value="3" />
                 <label for="lcal4">4</label>
-                <input id="calificacion" type="radio" name="calificacion" value="4" />
+                <input id="puntaje" type="radio" name="puntaje" value="4" />
                 <label for="lcal4">5</label>
-                <input id="calificacion" type="radio" name="calificacion" value="5" checked="checked" /></span><br />
+                <input id="puntaje" type="radio" name="puntaje" value="5" checked="checked" /></span><br />
             <!--  
             <div class="caja">
                 <input type="number" name="calificacion" id="calificacion" pattern="[0-5]" required placeholder="Calificacion">
@@ -49,9 +49,39 @@
         </form>
     </div>
 
-    <div class="resenas">
+    <?php
+    require_once '../include/obtieneRequets.php';
+    require_once '../conexionDB/insertaResena.php';
+    $nombreTabla = "resenas";
+    $arr = devArreglo($nombreTabla);
+    ?>
+    <div class="row">
+        <?php
+        foreach ($arr as $row) {
+            $pID = $row["id"];
+            ?>
+            <div class="column">
+                <?php
+                ?>
+                <div class="card">
+                    <h3>
+                        <?php
+                        $varRef = "puntaje";
+                        consultaResena($pID, $varRef, $nombreTabla);
+                        ?>
+                    </h3>
+                    <h4>
+                        <?php
+                        $varRef = "comentario";
+                        consultaResena($pID, $varRef, $nombreTabla);
+                        ?>
+                    </h4>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
 
-    </div>
 </body>
 
 </html>
