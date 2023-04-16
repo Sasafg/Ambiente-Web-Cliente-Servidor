@@ -48,4 +48,5 @@ function subir_archivos(form) {
 		span.innerHTML = "Cancelado";
 
 	});
+	
 }

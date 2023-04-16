@@ -12,7 +12,7 @@ function ingresaArticulo($pNombre, $pImagePath, $pDescripcion, $pPrecio, $nombre
     if (mysqli_set_charset($conexion, "utf8")){
         $stmt = $conexion->prepare("Insert into ".$nombreTabla." (id, nombre, imagePath, descripcion, precio)
                                         values(?,?,?,?,?)");
-        $stmt->bind_param("isssf", $iAuto, $iNombre, $iImagePath, $iDescripcion, $iPrecio);
+        $stmt->bind_param("isssd", $iAuto, $iNombre, $iImagePath, $iDescripcion, $iPrecio);
 
         //set parametros y ejecutar
         $iAuto = '';
@@ -98,7 +98,7 @@ function actualizaArticulo($pID, $nombreTabla)
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
         $actualizacion = mysqli_prepare($conexion, $sql);
-        $ok=mysqli_stmt_bind_param($actualizacion, "ssfi", $nombre, $descripcion, $precio);
+        $ok=mysqli_stmt_bind_param($actualizacion, "ssdi", $nombre, $descripcion, $precio);
         $ok=mysqli_stmt_execute($actualizacion);
     }
 

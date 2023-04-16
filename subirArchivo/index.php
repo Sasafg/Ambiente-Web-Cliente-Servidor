@@ -7,21 +7,9 @@
     <title>Subir Archivos</title>
 </head>
 <body>
-    <h3>Ingresando un articulo</h3>
-    <div>
-        <input type="text" name="nombreArticulo" id="nombreArticulo" pattern="[A-Za-z]+" required 
-        placeholder="Nombre">
-    </div>
-    <div>
-        <input type="text" name="precioArticulo" id="precioArticulo" pattern="^[0-9]{0,12}([,][0-9]{2,2})?$" required 
-        placeholder="Precio">
-    </div>
-    <div>
-        <textarea name="nombreArticulo" id="nombreArticulo" rows="4" placeholder="Descripcion"></textarea>
-    </div>
-
+    
     <div class="principal">
-        <h3>Imagen de articulo</h3>
+        <h3>Imagen del producto</h3>
     <form action="" id="form_subir" method="POST">
         
 
@@ -39,12 +27,20 @@
         <P></P>
     
         <div class="acciones">
-            <input type="submit" class="btn" name="Enviar">
-               
+            <input type="submit" class="btn" name="Enviar" value="Cargar">
+            <!-- <input type="button" class="cancel" id="cancelar" value="Cancelar"> -->
         </div>
     
     </form>
     </div>
+    
+    <div style="margin-left: 10%;">
+        <?php
+        echo "<a href='./productoNuevo.php'>Siguiente</a>";
+        ?>
+    </div>
+
+    
     
     <script type="text/javascript" src="main.js"></script>
 </body>
