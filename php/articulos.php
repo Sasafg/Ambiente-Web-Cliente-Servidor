@@ -22,39 +22,49 @@
    <?php
    require_once '../include/obtieneRequets.php';
    require_once '../conexionDB/insertaArticulo.php';
+   $nombreTabla = "articulos";
+   $arr = devArreglo($nombreTabla);
    ?>
         <div class="row">
+            <?php
+            foreach($arr as $row){ 
+                $pID = $row["id"];
+                ?>
+            
             <div class="column">
                 <?php
-                $pID = 2;
                 ?>
                 <div class="card">
                     <h3>
                         <?php
                         $varRef = "nombre";
-                        consultaArticulo($pID, $varRef);
+                        consultaArticulo($pID, $varRef, $nombreTabla);
                         ?>
                     </h3>
                     <?php $varRef = "imagePath"?>
-                    <img src="<?php consultaArticulo($pID, $varRef);?>"
+                    <img src="<?php consultaArticulo($pID, $varRef, $nombreTabla);?>"
                         alt="deco" width="220" height="220">
                         <h4>
                         <?php
                         $varRef = "descripcion";
-                        consultaArticulo($pID, $varRef);
+                        consultaArticulo($pID, $varRef, $nombreTabla);
                         ?>
                         </h4>
                     <div class="container">
                         <h4>Precio:₡ 
                         <?php
                         $varRef = "precio";
-                        consultaArticulo($pID, $varRef);
+                        consultaArticulo($pID, $varRef, $nombreTabla);
                         ?>
                         </h4>
                     </div>
                 </div>
             </div>
+            <?php
+            }
+            ?>
 
+<!-- SECCION A REMOVER
             <div class="column">
                 <div class="card">
                         <h3>Alfombras de Banjeja</h3>
@@ -102,7 +112,7 @@
                                     <button type="submit" class="boton">Agregar</button>
                                 </div>
                             </div>
-
+ -->
 
 
             </div>

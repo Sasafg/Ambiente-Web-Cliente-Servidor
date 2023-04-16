@@ -3,14 +3,14 @@
 require_once "conexion.php";
 
 //Ingresa la informacion a base de datos
-function ingresaArticulo($pNombre, $pImagePath, $pDescripcion, $pPrecio)
+function ingresaArticulo($pNombre, $pImagePath, $pDescripcion, $pPrecio, $nombreTabla)
 {
     $retorno = false;
     $conexion = Conecta();
     
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
-        $stmt = $conexion->prepare("Insert into articulos (id, nombre, imagePath, descripcion, precio)
+        $stmt = $conexion->prepare("Insert into ".$nombreTabla." (id, nombre, imagePath, descripcion, precio)
                                         values(?,?,?,?,?)");
         $stmt->bind_param("isssf", $iAuto, $iNombre, $iImagePath, $iDescripcion, $iPrecio);
 
@@ -33,11 +33,11 @@ function ingresaArticulo($pNombre, $pImagePath, $pDescripcion, $pPrecio)
 
 
 //Elimina la informacion de registro del usuario en base de datos
-function eliminaArticulo($pID)
+function eliminaArticulo($pID, $nombreTabla)
 {
     $retorno = false;
     $conexion = Conecta();
-    $sql = "delete from articulos where id = ?";
+    $sql = "delete from ".$nombreTabla." where id = ?";
 
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
@@ -51,11 +51,11 @@ function eliminaArticulo($pID)
 
 
 //Consulta cierta informacion de registro del usuario a base de datos
-function consultaArticulo($pID, $varRef)
+function consultaArticulo($pID, $varRef, $nombreTabla)
 {
     $retorno = false;
     $conexion = Conecta();
-    $sql = "select nombre, imagePath, descripcion, precio from articulos where id = ?";
+    $sql = "select nombre, imagePath, descripcion, precio from ".$nombreTabla." where id = ?";
     
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
@@ -89,11 +89,11 @@ function consultaArticulo($pID, $varRef)
 
 
 //Cambio de contrasena por medio de UPDATE (solo para admin)
-function actualizaArticulo($pID)
+function actualizaArticulo($pID, $nombreTabla)
 {
     $retorno = false;
     $conexion = Conecta();
-    $sql = "update articulos set nombre = ?, descripcion = ?, precio = ? where id = ?";
+    $sql = "update ".$nombreTabla." set nombre = ?, descripcion = ?, precio = ? where id = ?";
     
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
@@ -106,6 +106,26 @@ function actualizaArticulo($pID)
 
 }
 
+function devArreglo($nombreTabla){
+
+    $conexion = Conecta();
+    $sql = "select id from ".$nombreTabla;
+    
+    // formato de datos utf8
+    if (mysqli_set_charset($conexion, "utf8")){
+        $arr = mysqli_query($conexion, $sql);
+        //$ok=mysqli_stmt_bind_param($arr, "s", $nombreColumna);
+        //$ok=mysqli_stmt_execute();
+        //$arregloAssoc = $ok->fetch_assoc();
+        return $arr;
+    } else {
+        return null;
+    }
+
+    Desconecta($conexion);
+
+
+}
 
 
 ?>
