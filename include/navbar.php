@@ -16,6 +16,7 @@
         <li><a href="contacto.php">Contacto</a></li>
         <li><a href="registro.php">Registro</a></li>
         <li><a href="resenas.php">Reseñas</a></li>
+        <li><a href="login.php">LogIn</a></li>
     </ul>
 
 </div>

@@ -3,16 +3,16 @@
 require_once "conexion.php";
 
 //Ingresa la informacion de registro del nuevo usuario a base de datos
-function ingresaUsuario($pNombre, $pUsername, $pCorreo, $pPassword)
+function ingresaUsuario($pNombre, $pUsername, $pCorreo, $pPassword, $pTipo)
 {
     $retorno = false;
     $conexion = Conecta();
     
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
-        $stmt = $conexion->prepare("Insert into usuarios (id, nombre, username, correo, contrasena)
-                                        values(?,?,?,?,?)");
-        $stmt->bind_param("issss", $iAuto, $iNombre, $iUsername, $iCorreo, $iPassword);
+        $stmt = $conexion->prepare("Insert into usuarios (id, nombre, username, correo, contrasena, tipo)
+                                        values(?,?,?,?,?,?)");
+        $stmt->bind_param("issssi", $iAuto, $iNombre, $iUsername, $iCorreo, $iPassword, $iTipo);
 
         //set parametros y ejecutar
         $iAuto = '';
@@ -20,6 +20,7 @@ function ingresaUsuario($pNombre, $pUsername, $pCorreo, $pPassword)
         $iUsername = $pUsername;
         $iCorreo = $pCorreo;
         $iPassword = $pPassword;
+        $iTipo = $pTipo;
 
         if($stmt->execute()){
             $retorno = true;

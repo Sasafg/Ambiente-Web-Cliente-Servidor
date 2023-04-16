@@ -8,6 +8,12 @@ $correo = recogePost("correo");
 $contrasena = recogePost("password");
 $contrasena2 = recogePost("password2");
 
+if($nombre == "Admin"){
+    $tipo = 1;
+} else {
+    $tipo = 0;
+}
+
 $correoOk = false;
 $contrasena2OK = false;
 
@@ -25,7 +31,7 @@ if($correoOk && $contrasena2OK){
 
     require_once '../conexionDB/insertaUsuario.php';
 $username = recogePost("username");
-    if(ingresaUsuario($nombre, $username, $correo, $contrasena)){
+    if(ingresaUsuario($nombre, $username, $correo, $contrasena, $tipo)){
         echo "<p>Se ingresó adecuadamente </p>";
     }else{
         echo "<p>No se pudo ingresar</p>";

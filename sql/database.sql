@@ -48,6 +48,8 @@ CREATE TABLE decoshop.usuarios (
     username varchar(50) not null,
     correo varchar(100) not null,
     contrasena varchar(25) not null,
+    contrasena varchar(25) not null,
+    tipo int(1) not null,
     primary key (id)
 );
 

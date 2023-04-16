@@ -5,10 +5,10 @@ function procesaRegistro(){
     var p1 = document.getElementById('password').value;
     var p2 = document.getElementById('password2').value;
 
-    if(validacion){
+    if(p1 == p2){
         validaContrasena(p1, p2);
     } else {
-        alert("Invalid passwords");
+        alert ("Contrasenas no coinciden");
     }
 }
 
