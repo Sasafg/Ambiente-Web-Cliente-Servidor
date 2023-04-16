@@ -10,6 +10,7 @@ CREATE TABLE decoshop.infogeneral (
 
 CREATE TABLE decoshop.articulos (
     id int(11) not null auto_increment,
+    nombre varchar(100) not null,
     imagePath varchar(100) not null,
     descripcion varchar(150) not null,
     precio float (8) not null,
@@ -18,6 +19,7 @@ CREATE TABLE decoshop.articulos (
 
 CREATE TABLE decoshop.residencias (
     id int(11) not null auto_increment,
+    nombre varchar(100) not null,
     imagePath varchar(100) not null,
     descripcion varchar(150) not null,
     precio float (8) not null,
@@ -26,6 +28,7 @@ CREATE TABLE decoshop.residencias (
 
 CREATE TABLE decoshop.vehiculos (
     id int(11) not null auto_increment,
+    nombre varchar(100) not null,
     imagePath varchar(100) not null,
     descripcion varchar(150) not null,
     precio float (8) not null,

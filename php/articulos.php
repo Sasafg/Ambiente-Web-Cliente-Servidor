@@ -19,16 +19,38 @@
 <body>
 
    <h1> Artículos Destacados</h1>
+   <?php
+   require_once '../include/obtieneRequets.php';
+   require_once '../conexionDB/insertaArticulo.php';
+   ?>
         <div class="row">
             <div class="column">
+                <?php
+                $pID = 2;
+                ?>
                 <div class="card">
-                    <h3>Racks Negros Universales</h3>
-                    <img src="https://scontent.fsyq7-1.fna.fbcdn.net/v/t39.30808-6/260287322_235702638631761_2402257491780559833_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=W8O9QtNKfBIAX9eRpQ-&_nc_oc=AQnoTdDTa8q_nKVDw-Mkzs5eIy0l0b880cns4_DZ9_etV3vbGdUxxV23qNIXWsXXwCo&_nc_ht=scontent.fsyq7-1.fna&oh=00_AfB8Emk3W0Bo8ejWE2Z7k1H5u-RyJVNQFum0zcyIExEhfw&oe=642466F4"
+                    <h3>
+                        <?php
+                        $varRef = "nombre";
+                        consultaArticulo($pID, $varRef);
+                        ?>
+                    </h3>
+                    <?php $varRef = "imagePath"?>
+                    <img src="<?php consultaArticulo($pID, $varRef);?>"
                         alt="deco" width="220" height="220">
+                        <h4>
+                        <?php
+                        $varRef = "descripcion";
+                        consultaArticulo($pID, $varRef);
+                        ?>
+                        </h4>
                     <div class="container">
-                        <h4>Precio:₡88.000 </h4>
-                        <input type="number" class="input-number" placeholder="Digite la cantidad">
-                        <button type="submit" class="boton">Agregar</button>
+                        <h4>Precio:₡ 
+                        <?php
+                        $varRef = "precio";
+                        consultaArticulo($pID, $varRef);
+                        ?>
+                        </h4>
                     </div>
                 </div>
             </div>
