@@ -34,9 +34,9 @@ include_once '../include/navbar.php';
 
             <h2> Cambio contraseña </h2>
             <!-- anterior -->
-                <input type="password" name="oldPass" id="oldPass" required placeholder="Contrasena actual"></textarea>
+                <!--  <input type="password" name="oldPass" id="oldPass" required placeholder="Contrasena actual"></textarea>-->
             <!-- nueva -->
-                <input type="password" name="newPass" id="newPass" required placeholder="Contrasena nueva"></textarea>
+                <input type="password" name="newPass" id="newPass" required placeholder="Contrasena nueva">
             <button type="submit">Cambiar</button>
         </form>
 
