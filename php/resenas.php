@@ -64,15 +64,15 @@
     echo promediaResena();
     ?>
     </div>
-    <div class="row">
+    <div class>
         <?php
         foreach ($arr as $row) {
             $pID = $row["id"];
             ?>
-            <div class="column">
+            <div>
                 <?php
                 ?>
-                <div class="card">
+                <div class="resenas">
                     <h3>
                         <?php
                         $varRef = "puntaje";
