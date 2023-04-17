@@ -113,6 +113,7 @@ de nuestros preciados clientes", "Establecernos como empresa en el mercado costa
 alta calidad");
 
 
+
 INSERT INTO decoshop.contacto VALUES (null, "Alejandro", "correo@correo.com", "12345678", "Cotizacion", "Quisiera que me coticen un polarizado a mi carro");
 INSERT INTO decoshop.contacto VALUES (null, "Maria", "email@correo.com", "88888888", "Feedback", "Me gustaria tener la posibilidad de agendar una cita");
 INSERT INTO decoshop.contacto VALUES (null, "Jose", "email@email.com", "55555555", "Solicitud", "Podrian contactarme? Quiero que me hagan un trabajito en la casa");
