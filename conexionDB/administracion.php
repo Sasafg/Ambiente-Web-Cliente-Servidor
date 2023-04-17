@@ -147,7 +147,7 @@ function consultaInformacion($varRef)
                 } else if($varRef == "mision"){
                     echo $mision . " <br> ";
                 } else {
-                    echo "ID: " .$id . " <br> acerca: " . $acerca . " <br> vision: " . $vision . " <br> mision: " . $mision . "<br><br>";
+                    echo " <br> ACERCA:<br><br> " . $acerca . " <br><br> VISION:<br><br> " . $vision . " <br><br> MISION:<br><br> " . $mision . "<br><br>";
                 }
             }
         } else {
@@ -162,17 +162,34 @@ function consultaInformacion($varRef)
 
 /**ACTUALIZACIONES */
 
-//Cambio de contrasena por medio de UPDATE (solo para admin)
-function actualizaInformacion($pID, $nombre, $descripcion, $precio)
+//Cambio por medio de UPDATE (solo para admin)
+function actualizaInformacion($pID, $acerca, $vision, $mision)
 {
     $retorno = false;
     $conexion = Conecta();
-    $sql = "update infogeneral set nombre = ?, descripcion = ?, precio = ? where id = ?";
+    $sql = "update infogeneral set acerca = ?, vision = ?, mision = ? where id = ?";
     
     // formato de datos utf8
     if (mysqli_set_charset($conexion, "utf8")){
         $actualizacion = mysqli_prepare($conexion, $sql);
-        $ok=mysqli_stmt_bind_param($actualizacion, "sss", $nombre, $descripcion, $precio);
+        $ok=mysqli_stmt_bind_param($actualizacion, "sssi", $acerca, $vision, $mision, $pID);
+        $ok=mysqli_stmt_execute($actualizacion);
+    }
+
+    Desconecta($conexion);
+
+}
+
+function actualizaContrasenaAdmin($tipo, $password)
+{
+    $retorno = false;
+    $conexion = Conecta();
+    $sql = "update usuarios set contrasena = ? where tipo = 1";
+    
+    // formato de datos utf8
+    if (mysqli_set_charset($conexion, "utf8")){
+        $actualizacion = mysqli_prepare($conexion, $sql);
+        $ok=mysqli_stmt_bind_param($actualizacion, "s", $password);
         $ok=mysqli_stmt_execute($actualizacion);
     }
 

@@ -33,13 +33,19 @@
                 </a> 
             </div>
 
+            <div>
             <a href="../phpAdmin/infoAdmin.php" style="margin-left:17%; color: black">Informacion
                 </a> 
+            </div>
+
             <div>
-                
             <a href="../phpAdmin/resenasAdmin.php" style="margin-left:17%; color: black">Reseñas
                 </a> 
             </div>
+
+            <div>
+            <a href="../phpAdmin/passAdmin.php" style="margin-left:17%; color: black">Cambiar contraseña
+                </a> 
             </div>
 
             <script src="../cookie/Cookie.js"></script>

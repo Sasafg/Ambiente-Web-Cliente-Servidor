@@ -17,21 +17,12 @@ $nombreTabla = recogePost("selecProd");
 <body>
     <div class="vacio1">
 
-    <form action="./eliminaProducto.php" method="POST">
+    <form action="../server/eliminaSolicitud.php" method="POST">
 
     <h2> Eliminar </h2>
         <!-- ID -->
-        <span id="selecProd">
-            <label for="lcal1">Articulos</label>
-            <input id="selecProd2" type="radio" name="selecProd2" value="articulos" checked="checked" onclick="setCookie('selecProd',getElementById('selecProd').value,1)" />
-            <label for="lcal2">Vehiculos</label>
-            <input id="selecProd2" type="radio" name="selecProd2" value="vehiculos" onclick="setCookie('selecProd',getElementById('selecProd').value,1)" />
-            <label for="lcal3">Residencias</label>
-            <input id="selecProd2" type="radio" name="selecProd2" value="residencias" onclick="setCookie('selecProd',getElementById('selecProd').value,1)" />
-        </span><br />
-
         <div class="registro">
-            <input type="text" name="idProducto" id="idProducto" required 
+            <input type="text" name="idSolicitud" id="idSolicitud" required 
             placeholder="ID">
         </div>
         <button type="submit">Eliminar</button>
@@ -41,13 +32,19 @@ $nombreTabla = recogePost("selecProd");
         <?php
         $varRef = "todos";
         try {
-            consultaTodosArticulo($varRef, $nombreTabla);
+            consultaTodasSolicitudes();
         } catch (Exception $e) {
             $e->getMessage();
         }
         ?>
 
     </div>
+
+    <p></p>
+    <a href="../index.html">Ir al inicio</a>
+
+    <p></p>
+    <a href="../php/admin.php">Administracion</a>
 
     <script src="../cookie/Cookie.js"></script>
     <script src="../js/scriptRegistro.js"></script>

@@ -2,8 +2,6 @@
 
 require_once '../include/obtieneRequets.php';
 require_once '../conexionDB/administracion.php';
-require_once '../conexionDB/insertaResena.php';
-
 
 ?>
 
@@ -18,22 +16,25 @@ require_once '../conexionDB/insertaResena.php';
 <body>
     <div class="vacio1">
 
-    <h2> Consulta </h2>
-        <?php
-        echo "<br> ___________________________ <br>";
-        echo "<br> Puntuacion promedio <br>";
-        echo promediaResena();
-        echo "<br> ___________________________ <br><br>";
-        $varRef = "todos";
-        try {
-            echo "<br> Todas las reseñas: <br><br>";
-            consultaResenas($varRef);
-        } catch (Exception $e) {
-            $e->getMessage();
-        }
-        ?>
+    <form action="../server/cambiaContrasena.php" method="POST">
 
-    </div>
+    
+    
+
+    <h2> Cambio contraseña </h2>
+        <!-- anterior -->
+        <div class="registro">
+            <input type="password" name="oldPass" id="oldPass" required 
+            placeholder="Contrasena actual"></textarea>
+        </div>
+        <!-- nueva -->
+        <div class="registro">
+            <input type="password" name="newPass" id="newPass" required 
+            placeholder="Contrasena nueva"></textarea>
+        </div>
+
+        <button type="submit">Cambiar</button>
+    </form>
 
     <p></p>
     <a href="../index.html">Ir al inicio</a>
@@ -45,3 +46,4 @@ require_once '../conexionDB/insertaResena.php';
 
 </body>
 </html>
+
