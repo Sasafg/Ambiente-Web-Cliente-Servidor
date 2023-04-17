@@ -14,12 +14,13 @@
 
     <title>Registro</title>
 </head>
-<body>
-    
-    <!-- Incluye el navbar ubicado en la carpeta Include -->
+  <!-- Incluye el navbar ubicado en la carpeta Include -->
     <?php
     include_once '../include/navbar.php';
     ?>
+<body>
+    
+  
 
     <div class="vacio1">
 

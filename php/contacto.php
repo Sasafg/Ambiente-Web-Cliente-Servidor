@@ -9,18 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/Contacto.css" />
-  <link rel="preload" href="./css/contacto.css" as="style">
+  <link rel="preload" href="../css/contacto.css" as="style">
   <link rel="stylesheet" href="../css/style.css">
 
 </head>
-
-<body>
 <?php
     include_once '../include/navbar.php';
     ?>
+<body>
+
 
   <div class="container1">
-
     <div class="vacio1"></div>
     <form action="../server/recibeContacto.php" method="POST">
       <h2> Contáctanos </h2>

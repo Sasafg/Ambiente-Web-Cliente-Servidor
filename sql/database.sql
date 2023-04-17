@@ -70,7 +70,7 @@ CREATE TABLE decoshop.resenas (
 
 --Ejemplo de insert en Articulos--
 
-INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/racks.negros.jpg", "Descripcion", 88000);
 INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
 INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
 INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
