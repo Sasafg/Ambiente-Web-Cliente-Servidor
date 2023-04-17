@@ -9,15 +9,15 @@
         <img src="../imagenes/LOGO.png" alt="" width="100" height="100">
         </a>
 
-        <li><a href="index.php">Nosotros</a></li>
-        <li> <a href="articulos.php">Artículos</a></li>
-        <li><a href="vehiculos.php">Vehículos</a></li>
-        <li><a href="residencia.php">Residencia</a></li>
-        <li><a href="contacto.php">Contacto</a></li>
-        <li><a href="resenas.php">Reseñas</a></li>
-        <li><a href="registro.php">Registro</a></li>
-        <li><a href="login.php">LogIn</a></li>
-        <li><a href="admin.php" id="adminLink">Opciones Administrador</a></li>
+        <li><a href="../php/index.php">Nosotros</a></li>
+        <li><a href="../php/articulos.php">Artículos</a></li>
+        <li><a href="../php/vehiculos.php">Vehículos</a></li>
+        <li><a href="../php/residencia.php">Residencia</a></li>
+        <li><a href="../php/contacto.php">Contacto</a></li>
+        <li><a href="../php/resenas.php">Reseñas</a></li>
+        <li><a href="../php/registro.php">Registro</a></li>
+        <li><a href="../php/login.php">LogIn</a></li>
+        <li><a href="../php/admin.php" id="adminLink">Opciones Administrador</a></li>
     </ul>
 
 </div>

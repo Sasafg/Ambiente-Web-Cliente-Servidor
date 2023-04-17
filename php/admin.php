@@ -48,6 +48,11 @@
                 </a> 
             </div>
 
+            <div>
+            <a href="../phpAdmin/adminUsuarios.php" style="margin-left:17%; color: black">Administrar usuarios
+                </a> 
+            </div>
+
             <script src="../cookie/Cookie.js"></script>
             <script src="../js/scriptRegistro.js"></script>
         </form>
