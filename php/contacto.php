@@ -14,8 +14,9 @@
 
 </head>
 <?php
-    include_once '../include/navbar.php';
-    ?>
+include_once '../include/navbar.php';
+?>
+
 <body>
 
 
@@ -32,6 +33,7 @@
       <button type="submit">Enviar</button>
     </form>
     <div class="vacio2"></div>
+  </div>
 </body>
 
 </html>
