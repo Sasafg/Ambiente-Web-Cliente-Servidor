@@ -82,3 +82,32 @@ function consultaResena($pID, $varRef, $nombreTabla)
     Desconecta($conexion);
 
 }
+
+
+function promediaResena()
+{
+    $retorno = "";
+    $conexion = Conecta();
+    $sql = "select AVG(puntaje) as puntajepromedio from resenas";
+
+    // formato de datos utf8
+    if (mysqli_set_charset($conexion, "utf8")) {
+        $resultado = mysqli_prepare($conexion, $sql);
+        //$ok = mysqli_stmt_bind_param($resultado, "s", $pID);
+        $ok = mysqli_stmt_execute($resultado);
+
+        if ($ok) {
+            $ok = mysqli_stmt_bind_result($resultado, $puntajepromedio);
+            while (mysqli_stmt_fetch($resultado)) {
+                $retorno = $puntajepromedio;
+            }
+        } else {
+            echo "Error consulta";
+        }
+    }
+
+    Desconecta($conexion);
+
+    return $retorno;
+
+}

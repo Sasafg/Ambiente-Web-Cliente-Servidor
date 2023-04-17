@@ -18,21 +18,27 @@
     <?php
     include_once '../include/navbar.php';
     ?>
+    <?php
+    require_once '../include/obtieneRequets.php';
+    require_once '../conexionDB/insertaResena.php';
+    $nombreTabla = "resenas";
+    $arr = devArreglo($nombreTabla);
+    ?>
 
     <div class="resenas">
 
         <form method="POST" action="../server/recibeResena.php">
             <h2> Deja una Reseña </h2>
             <!--  -->
-            <span id="puntaje">
+            <span id="puntaje" style="color: black;">
                 <label for="lcal1">1</label>
-                <input id="puntaje" type="radio" name="puntaje" value="1" />
+                <input id="puntaje" type="radio" name="puntaje" value="1"/>&nbsp;&nbsp;&nbsp;&nbsp;
                 <label for="lcal2">2</label>
-                <input id="puntaje" type="radio" name="puntaje" value="2" />
+                <input id="puntaje" type="radio" name="puntaje" value="2" />&nbsp;&nbsp;&nbsp;&nbsp;
                 <label for="lcal3">3</label>
-                <input id="puntaje" type="radio" name="puntaje" value="3" />
+                <input id="puntaje" type="radio" name="puntaje" value="3" />&nbsp;&nbsp;&nbsp;&nbsp;
                 <label for="lcal4">4</label>
-                <input id="puntaje" type="radio" name="puntaje" value="4" />
+                <input id="puntaje" type="radio" name="puntaje" value="4" />&nbsp;&nbsp;&nbsp;&nbsp;
                 <label for="lcal4">5</label>
                 <input id="puntaje" type="radio" name="puntaje" value="5" checked="checked" /></span><br />
             <!--  
@@ -46,15 +52,18 @@
             <button type="submit" href="./php/resenas.php" onclick="procesaResena()">Enviar Reseña</button>
             <script src="../cookie/Cookie.js"></script>
             <script src="../js/scriptRegistro.js"></script>
+
+            
         </form>
+        
     </div>
 
+    <div class="resenas">
     <?php
-    require_once '../include/obtieneRequets.php';
-    require_once '../conexionDB/insertaResena.php';
-    $nombreTabla = "resenas";
-    $arr = devArreglo($nombreTabla);
+    echo "Puntuacion promedio <br><br>";
+    echo promediaResena();
     ?>
+    </div>
     <div class="row">
         <?php
         foreach ($arr as $row) {
