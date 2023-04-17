@@ -29,6 +29,11 @@ $nombreTabla = recogePost("selecProd");
 
     </div>
 
+    <p></p>
+    <a href="../index.html">Ir al inicio</a>
+    <p></p>
+    <a href="../php/admin.php">Administracion</a>
+
     <script src="../cookie/Cookie.js"></script>
     <script src="../js/scriptRegistro.js"></script>
 

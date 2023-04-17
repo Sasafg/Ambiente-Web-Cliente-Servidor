@@ -5,7 +5,7 @@ require_once '../include/obtieneRequets.php';
 $nombre = recogePost("nombreProducto");
 $precio = recogePost("precioProducto");
 $descripcion = recogePost("descProducto");
-$ruta = "../subirArchivo/";
+$ruta = recogePost("rutaProd");
 $tabla = recogePost("tipoProducto");
 
 
@@ -20,5 +20,6 @@ $tabla = recogePost("tipoProducto");
 
 
 echo "<a href='../subirArchivo/modificarProducto.php'>Volver</a>";
+
 
 ?>

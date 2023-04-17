@@ -9,10 +9,7 @@
 <body>
 
     <form action="../server/recibeProducto.php" method = POST>
-        <div>
-            <input type="text" name="rutaProd" id="rutaProd"
-            placeholder="Nombre Imagen" disabled>
-        </div>
+        
         <p></p>
         <h3>Ingresando un producto</h3>
         <span id="sProd">
@@ -37,6 +34,11 @@
         <div>
             <textarea name="descProducto" id="descProducto" rows="4" placeholder="Descripcion"></textarea>
         </div>
+        <div>
+            <input type="text" name="rutaProd" id="rutaProd"
+            placeholder="URL imagen">
+        </div>
+        <p></p>
         <input type="submit" class="btn" name="procesar" value="Procesar">
         </form>
     
