@@ -68,6 +68,9 @@ CREATE TABLE decoshop.resenas (
 );
 
 
+
+
+
 --Ejemplo de insert en Articulos--
 
 INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/racks.negros.jpg", "Racks de 120cm en material aluminio,

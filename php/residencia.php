@@ -103,7 +103,15 @@
         
     </div>
     </div>
-    <h6>TODOS LOS DERECHOS RESERVADOS DECOSHOP LIBERA Ⓡ </h6>
+    <h6 class="containerF">TODOS LOS DERECHOS RESERVADOS DECOSHOP LIBERA Ⓡ </h6>
+<style>
+    .containerF {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        text-align: center;
+
+    }
+</style>
     
 </body>
 
