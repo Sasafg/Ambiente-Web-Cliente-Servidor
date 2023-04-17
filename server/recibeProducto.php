@@ -19,6 +19,6 @@ $tabla = recogePost("tipoProducto");
     }
 
 
-echo "<a href='../subirArchivo/index.php'>Volver</a>";
+echo "<a href='../subirArchivo/modificarProducto.php'>Volver</a>";
 
 ?>

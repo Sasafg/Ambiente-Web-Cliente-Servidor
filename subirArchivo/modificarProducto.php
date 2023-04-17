@@ -13,24 +13,30 @@
 
     <div class="vacio1">
 
-    <form action="./productoNuevo.php" method="POST">
+    <form action="./index.php" method="POST">
     <h2> Agregar producto </h2>
         <button type="submit">Agregar</button>
     </form>
 
     <form action="./adminProducto.php" method="POST">
-        <h2> Consultar o eliminar </h2>
+        <h2> Eliminar </h2>
+        <button type="submit" onclick="setCookie('prueba',getElementById('prueba').value,1)">Eliminar</button>
+    </form>
+
+        <form action="./consultaProducto.php" method="POST">
+        <h2> Consultar </h2>
         <span id="selecProd">
-            <label for="lcal1">Articulos</label>
             <input id="selecProd" type="radio" name="selecProd" value="articulos" checked="checked" onclick="setCookie('selecProd',getElementById('selecProd').value,1)" />
-            <label for="lcal2">Vehiculos</label>
+            <label for="lcal1">Articulos</label>
             <input id="selecProd" type="radio" name="selecProd" value="vehiculos" onclick="setCookie('selecProd',getElementById('selecProd').value,1)" />
-            <label for="lcal3">Residencias</label>
+            <label for="lcal2">Vehiculos</label>
             <input id="selecProd" type="radio" name="selecProd" value="residencias" onclick="setCookie('selecProd',getElementById('selecProd').value,1)" />
+            <label for="lcal3">Residencias</label>
         </span><br />
 
-        <button type="submit" onclick="setCookie('prueba',getElementById('prueba').value,1)">Consultar o eliminar</button>
+        <button type="submit" onclick="setCookie('prueba',getElementById('prueba').value,1)">Consultar</button>
         </form>
+
     </div>
 
     <script src="../cookie/Cookie.js"></script>
