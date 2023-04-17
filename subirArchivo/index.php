@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>Subir archivo</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Subir Archivos</title>
+
 </head>
+
+<?php
+include_once '../include/navbar.php';
+?>
 <body>
     
     <div class="principal">
@@ -32,14 +40,14 @@
         </div>
     
     </form>
-    </div>
-    
+
     <div style="margin-left: 10%;">
         <?php
-        echo "<a href='./productoNuevo.php'>Siguiente</a>";
+        echo "<a style='color:black;' href='./productoNuevo.php'>Siguiente</a>";
         ?>
     </div>
-
+    </div>
+    
     
     
     <script type="text/javascript" src="main.js"></script>
