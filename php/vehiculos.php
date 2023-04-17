@@ -58,7 +58,7 @@
                         consultaArticulo($pID, $varRef, $nombreTabla);
                         ?>
                         </h4>
-                        <button class="button button2">COTIZAR AHORA</button>
+                       <!--  <button class="button button2">COTIZAR AHORA</button> -->
                     <style>
                         .button {
                             border: none;
