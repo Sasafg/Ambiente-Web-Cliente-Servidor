@@ -69,7 +69,7 @@ include_once '../include/navbar.php';
 
                     </div>
 
-                    <button id="ACotizar" class="button button2">MÁS INFORMACIÓN!!</button>
+                    <!-- <button id="ACotizar" class="button button2">MÁS INFORMACIÓN!!</button> -->
                     <style>
                         .button {
                             border: none;

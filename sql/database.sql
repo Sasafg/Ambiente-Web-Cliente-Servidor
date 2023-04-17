@@ -68,6 +68,8 @@ CREATE TABLE decoshop.resenas (
 );
 
 
+
+
 --Ejemplo de insert en Articulos--
 
 INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/racks.negros.jpg", "Racks de 120cm en material aluminio,
@@ -84,7 +86,7 @@ colores, es ideal para proteger la pintura del vehículo.", 185000);
 
 INSERT INTO decoshop.vehiculos VALUES (null, "Polarizado Trasero", "../imagenes/polarizados.jpg", "Aplicacion de Polarizado (1%,15% o 20%) al
  parabrisas trasero bajo la responsabilidad del cleinte solicitante.", 18000);
-INSERT INTO decoshop.vehiculos VALUES (null, "Polarizado en Ventanas", "../imagenes/pola.ventanas.jpg", "Aplicacion de Polarizado (1%,15% o 20%)", 28000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Polarizado en Ventanas", "../imagenes/pola.ventana.jpg", "Aplicacion de Polarizado (1%,15% o 20%)", 28000);
 INSERT INTO decoshop.vehiculos VALUES (null, "Remplazo de polarizado", "../imagenes/cambio.pola.jpg", "limpieza de todas ventanas para aplicar el nuevo polarizado
 (1%,15% o 20%)", 37000);
 INSERT INTO decoshop.vehiculos VALUES (null, "Polarizado Delantero", "../imagenes/frontal.jpg", "plicacion de Polarizado (1%,15% o 20%) al
@@ -109,3 +111,18 @@ altamente capacitados tiene años de experiencia en la instalación de todo tipo
 avanzados hasta kits de iluminación personalizados", "Llevar a cabo nuestra labor con el mayor esmero, ganando la confianza 
 de nuestros preciados clientes", "Establecernos como empresa en el mercado costarricense brindando un servicio de la mas 
 alta calidad");
+
+
+INSERT INTO decoshop.contacto VALUES (null, "Alejandro", "correo@correo.com", "12345678", "Cotizacion", "Quisiera que me coticen un polarizado a mi carro");
+INSERT INTO decoshop.contacto VALUES (null, "Maria", "email@correo.com", "88888888", "Feedback", "Me gustaria tener la posibilidad de agendar una cita");
+INSERT INTO decoshop.contacto VALUES (null, "Jose", "email@email.com", "55555555", "Solicitud", "Podrian contactarme? Quiero que me hagan un trabajito en la casa");
+INSERT INTO decoshop.contacto VALUES (null, "Elizabeth", "correo@email.com", "12345612", "Racks", "Quisiera adqurir los racks, como le hago?");
+
+
+INSERT INTO decoshop.resenas VALUES (null, 5, "ale23", "Una empresa muy seria, excelente servicio");
+INSERT INTO decoshop.resenas VALUES (null, 1, "as09afa", "No me gusto el trato");
+INSERT INTO decoshop.resenas VALUES (null, 3, "eneriga456", "Una empresa muy seria, excelente servicio");
+INSERT INTO decoshop.resenas VALUES (null, 2, "asd123", "Una empresa muy seria, excelente servicio");
+INSERT INTO decoshop.resenas VALUES (null, 5, "maria1990", "Me encanto como quedo mi casa");
+INSERT INTO decoshop.resenas VALUES (null, 4, "siSoy00", "Servicio muy bueno, pero tuve que esperar que me contactaran");
+
