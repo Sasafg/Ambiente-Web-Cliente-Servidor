@@ -49,7 +49,7 @@
                         echo "<td>";
                         echo ($row["tipo"] == 1) ? "Administrador" : "Usuario";
                         echo "</td>";
-                        echo "<td><a href=\"../phpAdmin/editarUsuario.php?id={$row['id']}\" class='btn btn-warning btn-sm'>Editar</a> <a href=\"../conexionDB/insertaUsuario.php?id={$row['id']}&accion=eliminar\" class=\"btn btn-danger btn-sm\" onclick=\"return confirm('¿Está seguro de eliminar este usuario?')\">Eliminar</a></td>";
+                        echo "<td><a href=\"../phpAdmin/editarUsuario.php?id={$row['id']}\" class='btn btn-primary btn-sm'>Editar</a> <a href=\"../conexionDB/insertaUsuario.php?id={$row['id']}&accion=eliminar\" class=\"btn btn-danger btn-sm\" onclick=\"return confirm('¿Está seguro de eliminar este usuario?')\">Eliminar</a></td>";
                         echo "</tr>";
                     }
                 } else {
