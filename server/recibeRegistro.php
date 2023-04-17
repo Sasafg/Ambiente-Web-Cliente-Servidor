@@ -23,7 +23,9 @@ if(preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,6}$/", $correo)){
 }
 
 if($contrasena == $contrasena2){
+    $contraEncriptada=password_hash($contrasena, PASSWORD_DEFAULT);
     $contrasena2OK = true;
+    
 }
 
 
@@ -31,7 +33,7 @@ if($correoOk && $contrasena2OK){
 
     require_once '../conexionDB/insertaUsuario.php';
 $username = recogePost("username");
-    if(ingresaUsuario($nombre, $username, $correo, $contrasena, $tipo)){
+    if(ingresaUsuario($nombre, $username, $correo, $contraEncriptada, $tipo)){
         echo "<p>Se ingresó adecuadamente </p>";
     }else{
         echo "<p>No se pudo ingresar</p>";

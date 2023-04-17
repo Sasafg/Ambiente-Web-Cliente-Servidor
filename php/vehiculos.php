@@ -58,80 +58,45 @@
                         consultaArticulo($pID, $varRef, $nombreTabla);
                         ?>
                         </h4>
+                        <button class="button button2">COTIZAR AHORA</button>
+                    <style>
+                        .button {
+                            border: none;
+                            color: white;
+                            padding: 16px 32px;
+                            text-align: center;
+                            text-decoration: none;
+                            display: inline-block;
+                            font-size: 13px;
+                            margin: 4px 2px;
+                            transition-duration: 0.4s;
+                            cursor: pointer;
+                            height: 15px;
+                            align-items: center;
+
+
+                        }
+
+
+                        .button2 {
+                            background-color: white;
+                            color: black;
+                            border: 2px solid #666e9e;
+                            ;
+                        }
+
+                        .button2:hover {
+                            background-color: #666e9e;
+                            color: white;
+                        }
+                    </style>
                     </div>
                 </div>
+                
             </div>
             <?php
             }
             ?>
-
-
-<!-- SECCION A REMOVER UNA VEZ SE INGRESE LA INFO A LA BASE DE DATOS
-            <div class="column">
-                <div class="card">
-                    <h3>Parabrisas Trasero</h3>
-                    <img src="../imagenes/polarizados.jpg"
-                        alt="deco" width="220" height="220">
-                    <div class="container">
-                        <h4>Precio:₡18.000 </h4>
-                        <input type="number" class="input-number" placeholder="Digite la cantidad">
-                        <button type="submit" class="boton">Agregar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                        <h3>Polarizado en Ventanas</h3>
-                        <img src="https://papelesadhesivos.com/wp-content/uploads/2021/10/polarizados-768x606.jpg"
-                            alt="deco" width="220" height="220">
-                        <h4>Precio:₡28.000 </h4>
-
-                        <input type="number" class="input-number" placeholder="Digite la cantidad">
-                        <button type="submit" class="boton">Agregar</button>
-                        <h6>Se aplica a vehículos sin polarizado*</h6>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                            <h3>Remplazo de Polarizado</h3>
-                            <img src="https://www.guillermomorales.cl/wp-content/uploads/2019/08/3-1.jpg"
-                                alt="deco" width="220" height="220">
-                            <h4>Precio:₡38.000 </h4>
-    
-                            <input type="number" class="input-number" placeholder="Digite la cantidad">
-                            <button type="submit" class="boton">Agregar</button>
-                            <h6>Se remplaza por completo el polarizado anterior*</h6>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                                <h3>Parabrisas Delantero</h3>
-                                <img src="https://www.revistaturbo.com/wp-content/uploads/2018/07/vidriospolarizados.jpg"
-                                    alt="deco" width="220" height="220">
-                                <h4>Precio:₡21.000 </h4>
-        
-                                <input type="number" class="input-number" placeholder="Digite la cantidad">
-                                <button type="submit" class="boton">Agregar</button>
-                                <h6>Se aplica bajo responsabilidad del cliente*</h6>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class="card">
-                                    <h3>Franja Anti sol (visera)</h3>
-                                    <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/411lBsPjuqL._AC_SX450_.jpg"
-                                        alt="deco" width="220" height="220">
-                                    <h4>Precio:₡8.000 </h4>
-            
-                                    <input type="number" class="input-number" placeholder="Digite la cantidad">
-                                    <button type="submit" class="boton">Agregar</button>
-                                </div>
-                            </div>
-
--->
 
 
             </div>
@@ -143,4 +108,13 @@
 
     
 </body>
+<h6 class="containerF">TODOS LOS DERECHOS RESERVADOS DECOSHOP LIBERA Ⓡ </h6>
+<style>
+    .containerF {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        text-align: center;
+
+    }
+</style>
 </html>

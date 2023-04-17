@@ -70,27 +70,35 @@ CREATE TABLE decoshop.resenas (
 
 --Ejemplo de insert en Articulos--
 
-INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/racks.negros.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.articulos VALUES (null, "Racks Negros Universales", "../imagenes/racks.negros.jpg", "Racks de 120cm en material aluminio,
+ llegan a un peso maximo de 100kg", 88500);
+INSERT INTO decoshop.articulos VALUES (null, "Alfombras de bandeja Universales", "../imagenes/alfombras.jpg", "Alfombras de bandeja universales,
+son ideales para cualquier vehículo ya que tienen la facilidad de recortarse y adaptarse sin problema al espacio.", 19000);
+INSERT INTO decoshop.articulos VALUES (null, "Canasta de 34x34 pulgadas", "../imagenes/canasta.jpg", "Canasta de 34x34 pulgadas en material aluminio
+ideal para vehículos pequeños, esta hecha por tubos redondeados para un aspecto más fuerte, esta canasta tiene un máximo de 85kg.", 98000);
+INSERT INTO decoshop.articulos VALUES (null, "Vinil de colores", "../imagenes/vinil.jpg", "Rollo de Vinilo de 156cm x 22 variedad de 
+colores, es ideal para proteger la pintura del vehículo.", 185000);
+
 
 --Ejemplo de insert en Vehiculos--
 
-INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.vehiculos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.articuvehiculoslos VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Polarizado Trasero", "../imagenes/polarizados.jpg", "Aplicacion de Polarizado (1%,15% o 20%) al
+ parabrisas trasero bajo la responsabilidad del cleinte solicitante.", 18000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Polarizado en Ventanas", "../imagenes/pola.ventanas.jpg", "Aplicacion de Polarizado (1%,15% o 20%)", 28000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Remplazo de polarizado", "../imagenes/cambio.pola.jpg", "limpieza de todas ventanas para aplicar el nuevo polarizado
+(1%,15% o 20%)", 37000);
+INSERT INTO decoshop.vehiculos VALUES (null, "Polarizado Delantero", "../imagenes/frontal.jpg", "plicacion de Polarizado (1%,15% o 20%) al
+ parabrisas trasero bajo la responsabilidad del cleinte solicitante.", 26000);
+INSERT INTO decoshop.articuvehiculoslos VALUES (null, "Visera Anti Sol", "../imagenes/visera.jpg", "Visera de tamaño personalisado (max 30cm) 
+para evitar el sol", 11000);
 
 --Ejemplo de insert en Residencias--
 
-INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
-INSERT INTO decoshop.residencias VALUES (null, "Racks Negros Universales", "../imagenes/el-coco.jpg", "Descripcion", 88000);
+INSERT INTO decoshop.residencias VALUES (null, "Polarizado Industrial", "../imagenes/el-coco.jpg", "Polarizado aplicable hasta 8m x 8m", 108000);
+INSERT INTO decoshop.residencias VALUES (null, "Ventanas pequeñas", "../imagenes/elcoco.jpg", "Aplicacion de polarizado a ventanas estáticas de hasta 2m x 2m", 19000);
+INSERT INTO decoshop.residencias VALUES (null, "Puertas de Vidrio", "../imagenes/nicoya.jpg", "Polarizado de ventanas 2m x 2m", 49000);
+INSERT INTO decoshop.residencias VALUES (null, "Ventanas Clásicas", "../imagenes/nicoya2.jpg", "Aplicaion de polarizado a ventanas de 1.50m x 1.80m", 28000);
+
 
 
 -- Insert para Nosotros
