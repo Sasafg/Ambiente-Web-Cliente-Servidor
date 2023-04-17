@@ -2,7 +2,7 @@
 
 require_once '../include/obtieneRequets.php';
 
-$puntaje = recogePost("calificacion");
+$puntaje = recogePost("puntaje");
 $comentario = recogePost("comentario");
 
 
